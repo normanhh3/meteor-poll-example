@@ -1,0 +1,13 @@
+#poll {
+	margin: 0px auto;
+	width: 550px;
+	border: 2px solid White;
+	border-radius: 7px;
+	background: WhiteSmoke;
+	font-size: 14px;
+	font-family: Arial;
+} 
+
+#poll .option {
+	cursor: pointer;
+}
