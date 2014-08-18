@@ -57,9 +57,8 @@ var drawChart = function(poll) {
   };
 
   var optionClick = function(d, i) {
-    Polls.update({ _id: poll._id, 'options.name': d.name }, { $inc: { 'options.$.value': 1 } });
+    Meteor.call('vote', poll._id, d.name);
   }
-
   
   // Draw main canvas
   var svg = d3.select('#poll').select('svg')
